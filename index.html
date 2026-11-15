@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+    1. Placeringen av <script> taggen påverkar när Javascript körs. 
+        Om den placeras i <head> körs den koden innan HTML är renderad, 
+        vilket kan leda till problem om skriptet försöker arbeta med elementen innan de finns i DOM:en.
+        om <script> taggen placeras i slutet av <body> körs koden efter att  allt HTML innehåll laddats, 
+        vilket gör att skriptet kan arbeta med elementen utan problem.
+
+    2. Attributet "defer" gör att koden laddas parallellt med html filen, men körs först när hela html filen är färdigladdad.
+    
+    -->
+</head>
+<body>
+
+    <script src ="script.js"></script>
+</body>
+</html>
